@@ -21,10 +21,15 @@ CSV (Data Storage)
 ## Project Structure
 
 web-scraping-data-analysis/
-├── scraper.py # Web scraping with pagination & error handling
-├── clean_data.py # Data cleaning & transformation
-├── app.py # Streamlit web application
-├── books_raw.csv # Raw scraped data
-├── books_cleaned.csv # Cleaned dataset for analysis
+
+ scraper.py # Web scraping with pagination & error handling
+ 
+ clean_data.py # Data cleaning & transformation
+ 
+ app.py # Streamlit web application
+ 
+ books_raw.csv # Raw scraped data
+ 
+ books_cleaned.csv # Cleaned dataset for analysis
 ├── requirements.txt # Project dependencies
 └── README.md # Project documentation
