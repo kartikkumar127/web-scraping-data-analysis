@@ -28,4 +28,5 @@ for page in range(1, 6):  # Pagination (5 pages)
 df = pd.DataFrame(books, columns=["Title", "Price", "Rating", "Availability"])
 df.to_csv("books_raw.csv", index=False)
 
-print("✅ Scraping Completed. File saved as books_raw.csv")
+print("Scraping Completed. File saved as books_raw.csv")
+
