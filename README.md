@@ -78,19 +78,19 @@ Interactive tables
 ## How to Run the Project
 step 1 Install Dependencies
 
-pip install -r requirements.txt
+>>pip install -r requirements.txt
 
 step 2 Run Web Scraper
 
-python scraper.py
+>>python scraper.py
 
 step 3 Clean the Data
 
-python clean_data.py
+>>python clean_data.py
 
 step 4 Run Streamlit App
 
-streamlit run app.py
+>>streamlit run app.py
 
 step 5 Power BI Dashboard Setup
 
