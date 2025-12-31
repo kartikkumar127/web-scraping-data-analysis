@@ -117,3 +117,66 @@ Average Book Price
 Average Rating
 
 Rating Distribution
+
+## Business Problem
+
+Many businesses rely on online data (prices, reviews, products, trends), but this data is:
+
+Scattered across multiple websites
+
+Not available in structured formats
+
+Time-consuming to collect manually
+
+Manual data collection leads to delayed insights, outdated reports, and missed opportunities.
+
+## Solution
+
+This project automates web data extraction and analysis by:
+
+Scraping data from websites automatically
+
+Cleaning and structuring raw web data
+
+Performing analysis and generating insights
+
+Preparing data for dashboards and reporting tools
+
+## Use Cases
+ E-Commerce & Retail
+
+> Track product prices
+
+> Monitor competitor offerings
+
+> Analyze discounts and availability
+
+ Customer Experience Teams
+
+> Collect and analyze online reviews
+
+> Identify customer sentiment and trends
+
+ Data Analysts
+
+> Build datasets for analysis
+
+> Automate recurring data collection
+
+> Feed clean data into Power BI / SQL
+
+ Market Research
+
+> Track trends across regions
+
+> Compare brands and pricing over time
+
+## Business Impact
+
+Saves hours of manual data collection
+
+Enables real-time market insights
+
+Improves competitive decision-making
+
+Scalable for large datasets
