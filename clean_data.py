@@ -4,9 +4,8 @@ import re
 # Load raw data with encoding fix
 df = pd.read_csv("books_raw.csv", encoding="latin1")
 
-# -------------------------------
-# CLEAN PRICE COLUMN (UNIVERSAL FIX)
-# -------------------------------
+# CLEAN PRICE COLUMN
+
 def clean_price(value):
     if pd.isna(value):
         return None
@@ -16,9 +15,7 @@ def clean_price(value):
 
 df["Price"] = df["Price"].apply(clean_price)
 
-# -------------------------------
 # CLEAN RATING COLUMN
-# -------------------------------
 rating_map = {
     "One": 1,
     "Two": 2,
@@ -28,9 +25,7 @@ rating_map = {
 }
 df["Rating"] = df["Rating"].map(rating_map)
 
-# -------------------------------
 # CLEAN AVAILABILITY
-# -------------------------------
 df["Availability"] = (
     df["Availability"]
     .astype(str)
@@ -39,15 +34,12 @@ df["Availability"] = (
     .str.strip()
 )
 
-# -------------------------------
 # REMOVE DUPLICATES & NULLS
-# -------------------------------
 df.drop_duplicates(inplace=True)
 df.dropna(inplace=True)
 
-# -------------------------------
 # SAVE CLEAN DATA
-# -------------------------------
 df.to_csv("books_cleaned.csv", index=False)
 
-print("✅ Data cleaned successfully and saved as book")
+print("Data cleaned successfully and saved as book")
+
